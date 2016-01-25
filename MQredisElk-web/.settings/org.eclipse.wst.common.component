@@ -4,6 +4,18 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="MQredisElk-consumer-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MQredisElk-consumer/MQredisElk-consumer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MQredisElk-dal-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MQredisElk-dal/MQredisElk-dal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MQredisElk-elasticsearch-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MQredisElk-elasticsearch/MQredisElk-elasticsearch">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MQredisElk-producer-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MQredisElk-producer/MQredisElk-producer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="MQredisElk-web"/>
         <property name="java-output-path" value="/MQredisElk-web/target/classes"/>
     </wb-module>

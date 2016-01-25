@@ -10,9 +10,30 @@
 	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
+			<groupId>com.zto</groupId>
+			<artifactId>MQredisElk-consumer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zto</groupId>
+			<artifactId>MQredisElk-elasticsearch</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zto</groupId>
+			<artifactId>MQredisElk-producer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>javaee</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>5</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 	</dependencies>
 </project>
