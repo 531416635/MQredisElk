@@ -7,9 +7,16 @@
 		(account_number,address,age,balance,city,email,employer,firstname,gender,lastname,state)
 		VALUES (
 		#{account_number}, #{address},#{age},
-		#{balance}, #{city},#{email},
+		#{balance},
+		#{city},#{email},
 		#{employer}, #{firstname},#{gender},
-		 #{lastname},#{state}
+		#{lastname},#{state}
 		)
 	</insert>
+	<select id="selectList" parameterType="hashMap" resultType="com.zto.model.Account">
+		SELECT * FROM accounts where account_number &gt;= #{begin} and
+		account_number
+		&lt;= #{end}
+		ORDER BY account_number ASC
+	</select>
 </mapper>

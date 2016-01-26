@@ -109,7 +109,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 		scope="prototype">
 		<property name="patterns">
 			<list>
-				<value>com.wit.service.*</value>
+				<value>com.zto.service.*</value>
 			</list>
 		</property>
 	</bean>
